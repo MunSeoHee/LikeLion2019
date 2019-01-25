@@ -1,9 +1,29 @@
-<h1>안녕하세요, 여기서 글자를 세세요.</h1>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-<a href="{%url 'about'%}">ABOUT</a>
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
-<form action="{%url 'result'%}">
-    <textarea cols="40" rows="10" name="fulltext"></textarea>
-    <br>
-    <input type="submit" value="Count!">
-</form>
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+<div class="text-center">
+    <h1>안녕하세요, 여기서 글자를 세세요.</h1>
+
+    <form action="{%url 'result'%}"> 
+        <center><textarea class="form-control" rows="5" name="fulltext" cols="100"></textarea></center>
+        <br>
+        <a href="{%url 'about'%}" class="btn btn-info">ABOUT</a>
+        <input type="submit" class="btn btn-info" value="Count!">
+    </form>
+
+</div>
+
+
+<style>
+    .form-control{
+        width: auto;
+    }
+
+</style>

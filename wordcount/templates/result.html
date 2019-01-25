@@ -1,6 +1,16 @@
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<div class="text-center">
+
 <h1>당신이 입력한 텍스트는 {{total}}로 구성되어 있습니다</h1>
 
-<a href="{%url 'home'%}">다시 하기</a>
+
 <br>
 <h2>입력한 텍스트 : </h2>
 {{full}}
@@ -9,3 +19,13 @@
 {%for word, howmany in dictionary%}
 {{word}}:{{howmany}}<br>
 {%endfor%}
+
+
+<a href="{%url 'home'%}" class="btn btn-info">다시 하기</a>
+</div>
+
+<style>
+a{
+    margin-top : 3rem;
+}
+</style>
